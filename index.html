@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro"><!-- Ajuda os navegadores a achar o seu site/app/projeto-->
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="./JavaScript/script.js" defer ></script>
+
+    <title>Focus Timer</title>
+</head>
+<body>
+    <div class="pagina light2 ">
+
+        <header>
+            <div class="sol light ">
+                <img src="./image/Sol.svg" alt="iconeSol">
+                <span class="sr-only"> Ativar LightMode</span>
+            </div>
+            <div class="lua ">
+                <img src="./image/lua.svg" alt="iconeLua">
+                <span class="sr-only"> ativar DarkMode</span>
+            </div>
+        </header>
+        <main>
+            <label class="numero light2 ">
+                <span class="minutos"
+                inputmode="number">25</span>
+                <span>:</span>
+                <span class="seconds"
+                inputmode="number">00</span>
+            </label>
+            <div class="icones ">
+                <div class="img1">
+                    <div>
+                        <img class="pause " src="./image/pause.svg" alt="iconePause">
+                        <span class="sr-only"> pausar contador</span>
+                    </div>
+                    <div>
+                        <img class="play" src="./image/play.svg" alt="iconeplay">
+                        <span class="sr-only"> iniciar contador</span>
+                    </div>
+                </div>
+                <div class="img2">
+                    <div>
+                        <img class="stop " src="./image/stop.svg" alt="iconeStop">
+                        <span class="sr-only"> Reiniciar contador</span>
+                    </div>
+                    <div>
+                        <img class="timer" src="./image/timer.svg" alt="iconeTimer">
+                        <span class="sr-only">Modificar  contador</span>
+                    </div>
+                </div>
+                <div class="img3">
+                    <div>
+                        <img class="audio " src="./image/audio.svg" alt="iconeAudio">
+                        <span class="sr-only">Colocar musica de fundo</span>
+                    </div>
+                    <div>
+                        <img class="notAudio" src="./image/notAudio.svg" alt="iconenotAudio">
+                        <span class="sr-only"> tirar musica de fundo</span> 
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    
+}
+.pagina{
+    height: 100vh;
+    background: #121214;
+}
+.pagina.light2{
+    background: #F8F8FC;
+}
+.light{
+    display: none;
+}
+header{
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    cursor: pointer;
+    background: none;
+    border-radius: 50%;
+    border: none;
+    
+}
+header:hover{
+    transition: transform .3s;
+    transform: scale(1.2);  
+}
+header .lua{
+    --startX: -2000%;
+    animation: move 1.5s;
+}
+header .sol{
+    --startX: -2000%;
+    animation: move 1.5s;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    ---startY: -50%;
+    animation: moves 1.5s;
+
+}
+main .numero{
+    color: #F8F8FC;
+    font-size: 9.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 1.6rem;
+
+}
+main .numero.light2{
+    color: #121214;
+}
+main .icones{
+    display: flex;
+    gap: 1.6rem;
+
+    border-radius: 999.9rem;
+    background: #242424;
+    padding: 2.2rem 4.0rem;
+}
+.icones img{
+    width: 6.4rem;
+    height: 6.4rem;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.icones img:hover{
+    transform: scale(1.1);
+}
+
+.running .play,
+.running .timer,
+.music-on .notAudio,
+html:not(.running) .pause,
+html:not(.running) .stop,
+html:not(.music-on) .audio{
+    display: none;
+}
+
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+
+
+
+
+
+
+@keyframes move{
+    
+    0%{
+        
+        transform: translateX(var(--startX))  ;
+    }
+    100%{
+    
+    }
+}
+@keyframes moves{
+    
+    0%{
+        
+        transform: translateY(var(---startY))  ;
+    }
+    100%{
+    
+    }
+}
+
+@media ((max-width: 900px)){
+    header .sol,  header .lua{
+        animation: move none;
+    }
+
+
+
+}
+
+
+
